@@ -1,17 +1,22 @@
-Consider pieces in chess, , is saying that pieces in their essence are build on two fundamental concepts: 
+Considering pieces in chess, considering their value is linked to the space they on, means that pieces in their essence are built on two fundamental concepts: 
 - the cell control
 - the mobility
+In this file we are going to describe the process to calculate the value of piece when the space (chessboard) is empty.
 
 To calculate the value of a piece we proceed as follow:
    1) pawn
-      A pawn is a pawn on 48 cells, first row and last row are not counted: it is not a pawn. 
-      6 rows x 8 columns = 48 cells
-      on the first and last column; on each cell the pawn occupy, it controls one cell
-      on the other cells, it controls 2 cells.
-      Let's sum all the cells controlled--> (6x2)+(12x6) = 84
-      Let's divide this number by the number of the cells occupied (48)
-      84:48 = 1.75 >> The Average Cell Control (ACC)
-      The ACC of the pawn is 1.75
+      a) Determination of the ACC or Average Cell Control
+         A pawn is a pawn on 48 cells, first row and last row are not counted: it is not a pawn. 
+         6 rows x 8 columns = 48 cells
+         on the first and last column; on each cell the pawn occupy, it controls one cell
+         on the other cells, it controls 2 cells.
+         Let's sum all the cells controlled--> (6x2)+(12x6) = 84
+         Let's divide this number by the number of the cells occupied (48)
+         84:48 = 1.75 >> The Average Cell Control (ACC)
+         The ACC of the pawn is 1.75
+      b) Determination of the PM or Piece Mobility
+         A pawn is a pawn on 48 cells, first row and last row are not counted: it is not a pawn.  
+         On the second row, pawns of the first and last column, can move (in one move) in three directions (two, straight on, and one taking aside an enemy piece)
       
 Before to go forward 
       
