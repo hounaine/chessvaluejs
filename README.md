@@ -1,2 +1,4 @@
 # chessvaluejs
-The purpose of this analisis is to determine instantly the value of a piece. This is to help creating a new AI chess engine based on new concepts.
+The purpose of this analisis is to determine instantly the value of a piece and the values of all pieces. 
+This will help player choose inmediate best moves and next best moves.
+This isalso will help creating a new AI chess engine based on new concepts.
