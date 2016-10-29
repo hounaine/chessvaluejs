@@ -1,0 +1,17 @@
+Consider pieces in chess, , is saying that pieces in their essence are build on two fundamental concepts: 
+- the cell control
+- the mobility
+
+To calculate the value of a piece we proceed as follow:
+   1) pawn
+      A pawn is a pawn on 48 cells, first row and last row are not counted: it is not a pawn. 
+      6 rows x 8 columns = 48 cells
+      on the first and last column; on each cell the pawn occupy, it controls one cell
+      on the other cells, it controls 2 cells.
+      Let's sum all the cells controlled--> (6x2)+(12x6) = 84
+      Let's divide this number by the number of the cells occupied (48)
+      84:48 = 1.75 >> The Average Cell Control (ACC)
+      The ACC of the pawn is 1.75
+      
+Before to go forward 
+      
