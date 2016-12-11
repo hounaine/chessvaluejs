@@ -1,0 +1,11 @@
+A board is composed of squares assembled and having adresses
+var s = square
+square = (rank, column, diag_left, diag_right)
+a8 (8,1,15,8)| a7(
+a7
+a6
+a5
+a4
+a3
+a2 (2,1,9,2) |
+a1 (1,1,8,1) | 
